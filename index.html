@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nirsancat | Personal Website</title>
+    <meta name="description" content="Welcome to Nirsancat's personal website. Explore projects, experiments and creations.">
+
+    <meta name="theme-color" content="#101114">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #101114;
+            color: #eeeeee;
+            font-family: 'DM Sans', sans-serif;
+            line-height: 1.7;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            width: min(1100px, 88%);
+            margin: auto;
+        }
+
+        header {
+            padding: 28px 0;
+            border-bottom: 1px solid #292929;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #d4ad68;
+            font-weight: 700;
+            font-size: 21px;
+            letter-spacing: 2px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            color: #aaaaaa;
+            font-size: 14px;
+        }
+
+        .nav-links a:hover {
+            color: #d4ad68;
+        }
+
+        .hero {
+            min-height: 590px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 90px 0;
+        }
+
+        .eyebrow {
+            color: #d4ad68;
+            letter-spacing: 4px;
+            font-size: 12px;
+            text-transform: uppercase;
+            margin-bottom: 22px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(45px, 8vw, 82px);
+            line-height: 1.15;
+            max-width: 800px;
+            font-weight: 600;
+        }
+
+        h1 span {
+            color: #d4ad68;
+        }
+
+        .hero p {
+            color: #aaaaaa;
+            max-width: 550px;
+            margin-top: 25px;
+            font-size: 17px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 32px;
+            padding: 12px 24px;
+            background: #d4ad68;
+            color: #101114;
+            border-radius: 5px;
+            font-weight: 700;
+            transition: 0.2s;
+        }
+
+        .button:hover {
+            background: #ebc987;
+            transform: translateY(-2px);
+        }
+
+        section {
+            padding: 75px 0;
+            border-top: 1px solid #292929;
+        }
+
+        .section-label {
+            color: #d4ad68;
+            font-size: 12px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 38px;
+            margin-bottom: 20px;
+        }
+
+        .about-text {
+            color: #aaaaaa;
+            max-width: 650px;
+        }
+
+        .project-card {
+            background: #18191d;
+            border: 1px solid #303035;
+            border-radius: 12px;
+            padding: 32px;
+            max-width: 650px;
+            margin-top: 25px;
+            transition: 0.2s;
+        }
+
+        .project-card:hover {
+            border-color: #d4ad68;
+            transform: translateY(-3px);
+        }
+
+        .project-tag {
+            color: #d4ad68;
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .project-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            margin: 12px 0;
+        }
+
+        .project-card p {
+            color: #aaaaaa;
+            margin-bottom: 20px;
+        }
+
+        .project-link {
+            color: #d4ad68;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        footer {
+            padding: 30px 0;
+            border-top: 1px solid #292929;
+            color: #777777;
+            font-size: 13px;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .nav-links {
+                gap: 14px;
+                font-size: 12px;
+            }
+
+            .hero {
+                min-height: 500px;
+            }
+
+            h2 {
+                font-size: 32px;
+            }
+
+            .project-card {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">NIRSANCAT.</a>
+
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="container">
+            <section class="hero" style="border: none;">
+                <div class="eyebrow">Welcome to my corner of the internet</div>
+
+                <h1>
+                    Ideas become<br>
+                    <span>something more.</span>
+                </h1>
+
+                <p>
+                    A place for my projects, experiments,
+                    interests and things I build along the way.
+                </p>
+
+                <a href="#projects" class="button">
+                    Explore my projects →
+                </a>
+            </section>
+        </div>
+
+        <section id="about">
+            <div class="container">
+                <div class="section-label">01 / About</div>
+
+                <h2>A little about this space.</h2>
+
+                <p class="about-text">
+                    Welcome! This is my personal website, where I
+                    showcase projects and experiments that I work
+                    on. From programming to technology, this is
+                    where ideas take shape.
+                </p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <div class="section-label">02 / Projects</div>
+
+                <h2>Things I've been building.</h2>
+
+                <div class="project-card">
+                    <div class="project-tag">Artificial Intelligence</div>
+
+                    <h3>Chips AI</h3>
+
+                    <p>
+                        An AI chatbot with a distinctive
+                        Shakespearean personality, built using
+                        JavaScript, Node.js and OpenRouter.
+                    </p>
+
+                    <a
+                        href="https://github.com/nirsancat/Chips-AI"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-link"
+                    >
+                        Explore the project on GitHub →
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            © 2026 Nirsancat. Built with curiosity.
+        </div>
+    </footer>
+
+</body>
+</html>
